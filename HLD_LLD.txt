@@ -1,0 +1,40 @@
+LLD & HLD
+========================================
+
+Monolithic disadvantages:
+-> Tightly coupled.
+-> Non Scalable.
+-> Rgression run is complex.
+-> Difficulty in debugging.
+
+Advantages of Microservices.													Disadvantage of Micorservice.
+===============================================								======================================================
+	
+-> Loosely coupled.															-> 	Latency increases if it is not that loosely coupled.
+-> Scalable.																->  Debugging and monitor is hard.				
+																			-> Transaction Management is difficult.
+																			
+																			
+																			
+																			
+Phases of creating Microservice:
+=========================================
+
+-> Decompostion : Breaking into small services.
+-> Database :  Segragated or shared DB.
+-> Communtication : Api or etc..
+-> Integration : Gateway.
+-> Monitoring : 
+
+========================================= =============================================================
+Decompostion Pattern.
+====================================
+
+1. Business Capability.
+--------------------------------
+Each funtionality is converted to a services
+
+
+2. SubDomain.
+---------------------------------------
+Funtionality is mapped to a domain and in each domain there will be a services.
