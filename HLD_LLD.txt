@@ -1,6 +1,22 @@
 LLD & HLD
 ========================================
 
+
+CAP Theorem:
+=========================================
+C -> Consistency.
+A -> Availability.
+P -> Partitioned.
+
+
+The ideal things while designing a system is to have all the three.
+-> But it is impossible to achieve it. We can combination of any two. 
+
+Protocalls.
+
+
+
+
 Monolithic disadvantages:
 -> Tightly coupled.
 -> Non Scalable.
@@ -12,7 +28,7 @@ Advantages of Microservices.													Disadvantage of Micorservice.
 	
 -> Loosely coupled.															-> 	Latency increases if it is not that loosely coupled.
 -> Scalable.																->  Debugging and monitor is hard.				
-																			-> Transaction Management is difficult.
+																			->  Transaction Management is difficult.
 																			
 																			
 																			
@@ -38,3 +54,12 @@ Each funtionality is converted to a services
 2. SubDomain.
 ---------------------------------------
 Funtionality is mapped to a domain and in each domain there will be a services.
+
+==========================================================================================================
+Types of pattern in Microservice:
+
+1. Strangler pattern -> Maintain the both MVC and Microservice architecture. Route the traffic based on the request handling of each architecture.
+2. Saga pattern -> Two types choreography, orchestrator. -> it is used for maintaining the acid properties ove the different 
+					Microservice DB's by using a event queue.
+
+3. CQRS -> For read optimisation.
